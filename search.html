@@ -1,0 +1,953 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html;" />
+	<title>UC Santa Cruz - Schedule of Classes</title>
+	<link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="https://pisa.ucsc.edu/cs9/prd/stylesheets/soc.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+<style>
+.row-striped:nth-of-type(even){
+  background-color: #EEF5FB;
+}
+
+.row-striped:nth-of-type(odd){
+  background-color: #ffffff;
+}
+.panel-default > .panel-heading-custom{
+  background-image: none;
+  background-color: #EEF5FB;
+  color: #31708f;
+}
+.panel-default > .panel-heading-custom > h4{
+  margin-top     : 0px;
+  margin-bottom  : 0px;
+}
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: none; }
+ a[href]:after { content: ""  !important; }
+  abbr[title]:after { content: ""  !important; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""  !important; }
+   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+  .row { page-break-inside: avoid; }
+  .hide-print {display: none; }
+  .panel {border: 0px; max-width: none !important; }
+}
+
+
+.dl-horizontal dt {
+  float: left;
+  width: 160px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dl-horizontal dd {
+  margin-left: 180px;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!--INC0448957 - JM - Accessibility: To have skip nav working -->
+	<script type="text/javascript">
+	document.domain = "ucsc.edu";
+	parent.document.title = document.title;
+	</script><script type="text/javascript" src="https://pisa.ucsc.edu/cs9/prd/sr9_2013/js/results.js"></script><script>$( function() {
+									//$("#class_title_62876").closest("[id^=rowpanel]");
+									$("[id^=class_title_], [id^=class_id_], [id^=class_nbr_]").click(function(){
+										var parentPanel = $(this).closest("[id^=rowpanel]");
+										var detailForm = $("[id^=detail_form_]", parentPanel);
+										detailForm.submit();
+										return false;
+									});
+									$("#user_settings").init_settings_dialog();
+									$("#search_box").init_search_dialog('results');
+									$("#settings_link").click( function() { $("#user_settings").dialog('open') });
+									$("#search_link").click( function() { $("#search_box").dialog('open') });
+								}
+					);
+	      </script><script type="text/javascript" src="https://pisa.ucsc.edu/cs9/prd/sr9_2013/js/search.js"></script><script>$(
+					function() {
+						on_term_init($("#term_dropdown").val());
+						$("#crse_units_op").showHide_crse_units();
+						$("#search_anchor").focus();
+						$("#term_dropdown").change(
+							function() {
+								on_term_change($("#term_dropdown").val());					}
+						 );
+						$("#crse_units_op").change(
+							function() { $("#crse_units_op").showHide_crse_units(); }
+						);
+						$("#search_button").click(
+							  function() {
+							  if ( validate_input_count() ) {
+							  		$("#searchForm").submit();
+							  } else {
+							  		return false;
+							  }
+							}
+						)
+					}
+				   );
+		  </script><noscript><meta http-equiv="refresh" content="0; URL=https://pisa.ucsc.edu/cs9/prd/sr9_2013/enable_javascript.php"></noscript>
+	</head>
+
+	<body><div>
+<div id = "search_box" style="display: none;" title="Search">
+	
+
+
+<form action="index.php" method="post" name="searchForm" id="searchForm">
+<input type = "hidden" name = "action" value = "results" />
+
+
+
+
+
+
+<!-- Term -->
+
+<div class="form-group row">
+  <!--td align="right" class="PSDROPDOWNLABEL" style="width:20%" -->
+<label for="term_dropdown" class="col-sm-2 form-control-label"><b>Term</b></label>
+ <div class="col-sm-10">
+    <select name = "binds[:term]" id = "term_dropdown" class="form-control">
+    <option value = "2184" >2018 Summer Quarter</option><option value = "2182"  selected="selected">2018 Spring Quarter</option><option value = "2180" >2018 Winter Quarter</option><option value = "2178" >2017 Fall Quarter</option><option value = "2174" >2017 Summer Quarter</option><option value = "2172" >2017 Spring Quarter</option><option value = "2170" >2017 Winter Quarter</option><option value = "2168" >2016 Fall Quarter</option><option value = "2164" >2016 Summer Quarter</option><option value = "2162" >2016 Spring Quarter</option><option value = "2160" >2016 Winter Quarter</option><option value = "2158" >2015 Fall Quarter</option><option value = "2154" >2015 Summer Quarter</option><option value = "2152" >2015 Spring Quarter</option><option value = "2150" >2015 Winter Quarter</option><option value = "2148" >2014 Fall Quarter</option><option value = "2144" >2014 Summer Quarter</option><option value = "2142" >2014 Spring Quarter</option><option value = "2140" >2014 Winter Quarter</option><option value = "2138" >2013 Fall Quarter</option><option value = "2134" >2013 Summer Quarter</option><option value = "2132" >2013 Spring Quarter</option><option value = "2130" >2013 Winter Quarter</option><option value = "2128" >2012 Fall Quarter</option><option value = "2124" >2012 Summer Quarter</option><option value = "2122" >2012 Spring Quarter</option><option value = "2120" >2012 Winter Quarter</option><option value = "2118" >2011 Fall Quarter</option><option value = "2114" >2011 Summer Quarter</option><option value = "2112" >2011 Spring Quarter</option><option value = "2110" >2011 Winter Quarter</option><option value = "2108" >2010 Fall Quarter</option><option value = "2104" >2010 Summer Quarter</option><option value = "2102" >2010 Spring Quarter</option><option value = "2100" >2010 Winter Quarter</option><option value = "2098" >2009 Fall Quarter</option><option value = "2094" >2009 Summer Quarter</option><option value = "2092" >2009 Spring Quarter</option><option value = "2090" >2009 Winter Quarter</option><option value = "2088" >2008 Fall Quarter</option><option value = "2084" >2008 Summer Quarter</option><option value = "2082" >2008 Spring Quarter</option><option value = "2080" >2008 Winter Quarter</option><option value = "2078" >2007 Fall Quarter</option><option value = "2074" >2007 Summer Quarter</option><option value = "2072" >2007 Spring Quarter</option><option value = "2070" >2007 Winter Quarter</option><option value = "2068" >2006 Fall Quarter</option><option value = "2064" >2006 Summer Quarter</option><option value = "2062" >2006 Spring Quarter</option><option value = "2060" >2006 Winter Quarter</option><option value = "2058" >2005 Fall Quarter</option><option value = "2054" >2005 Summer Quarter</option><option value = "2052" >2005 Spring Quarter</option><option value = "2050" >2005 Winter Quarter</option><option value = "2048" >2004 Fall Quarter</option>    </select>
+ </div>
+</div>
+
+
+<!-- Session -->
+<div class="form-group row">
+<label for="Session" class="col-sm-2 form-control-label"><b>Session</b></label>
+ <div class="col-sm-10">
+    <select name = "binds[:session_code]" id = "Session" class="form-control form-control-sm">
+        <option value = "" selected="selected">All Sessions</option>
+
+        <option value = "ED1">Education Masters, Fifth Qtr</option><option value = "ED2">Education Masters, First Qtr</option><option value = "1">Regular Academic Session</option><option value = "5S1">Summer Session 1 (5 Weeks)</option><option value = "S10">Summer Session 10 Weeks</option><option value = "5S2">Summer Session 2 (5 Weeks)</option><option value = "S8W">Summer Session 8 Weeks</option>
+    </select>
+ </div>
+</div>
+
+<!-- Reg Status -->
+<div class="form-group row">
+<label for="reg_status" class="col-sm-2 form-control-label"><b>Status</b></label>
+ <div class="col-sm-10">
+    <select name = "binds[:reg_status]" id="reg_status" class="form-control form-control-sm">
+        <option value = "O">Open Classes</option><option value = "all">All Classes</option>     </select>
+ </div>
+</div>
+
+<!-- Subject -->
+<div class="form-group row">
+<label for="subject" class="col-sm-2 form-control-label"><b>Subject</b></label>
+ <div class="col-sm-10">
+    <select name = "binds[:subject]" id = "subject" class="form-control form-control-sm" placeholder="Select">
+        <option value = ""  selected="selected">&nbsp;</option>
+        <option value = "" >All Subjects</option>
+        <option value = "ACEN">Academic English</option><option value = "AMST">American Studies</option><option value = "ANTH">Anthropology</option><option value = "APLX">Applied Linguistics</option><option value = "AMS">Applied Math and Statistics</option><option value = "ARAB">Arabic</option><option value = "ART">Art</option><option value = "ARTG">Art&Des:Games&PlayableMedia</option><option value = "ASTR">Astronomy and Astrophysics</option><option value = "BIOC">Biochemistry and Molecular Bio</option><option value = "BIOL">Biology: Molecular Cell & Dev</option><option value = "BIOE">Biology:Ecology & Evolutionary</option><option value = "BME">Biomolecular Engineering</option><option value = "CRSN">Carson College</option><option value = "CHEM">Chemistry and Biochemistry</option><option value = "CHIN">Chinese</option><option value = "CLEI">College Eight</option><option value = "CLNI">College Nine</option><option value = "CLTE">College Ten</option><option value = "CMMU">Community Studies</option><option value = "CMPM">Computational Media</option><option value = "CMPE" selected="selected">Computer Engineering</option><option value = "CMPS">Computer Science</option><option value = "COWL">Cowell College</option><option value = "LTCR">Creative Writing</option><option value = "CRES">Critical Race & Ethnic Studies</option><option value = "CRWN">Crown College</option><option value = "DANM">Digital Arts and New Media</option><option value = "EART">Earth Sciences</option><option value = "ECON">Economics</option><option value = "EDUC">Education</option><option value = "EE">Electrical Engineering</option><option value = "ENGR">Engineering</option><option value = "LTEL">English-Language Literatures</option><option value = "ENVS">Environmental Studies</option><option value = "ETOX">Environmental Toxicology</option><option value = "FMST">Feminist Studies</option><option value = "FILM">Film and Digital Media</option><option value = "FREN">French</option><option value = "LTFR">French Literature</option><option value = "GAME">Games and Playable Media</option><option value = "GERM">German</option><option value = "LTGE">German Literature</option><option value = "GREE">Greek</option><option value = "LTGR">Greek Literature</option><option value = "HEBR">Hebrew</option><option value = "HNDI">Hindi</option><option value = "HIS">History</option><option value = "HAVC">History of Art&Visual Culture</option><option value = "HISC">History of Consciousness</option><option value = "HUMN">Humanities</option><option value = "ISM">Information Systems Management</option><option value = "ITAL">Italian</option><option value = "LTIT">Italian Literature</option><option value = "JAPN">Japanese</option><option value = "JWST">Jewish Studies</option><option value = "KRSG">Kresge College</option><option value = "LAAD">Languages</option><option value = "LATN">Latin</option><option value = "LALS">Latin American&Latino Studies</option><option value = "LTIN">Latin Literature</option><option value = "LGST">Legal Studies</option><option value = "LING">Linguistics</option><option value = "LIT">Literature</option><option value = "MATH">Mathematics</option><option value = "MERR">Merrill College</option><option value = "METX">Microbiol & Environ Toxicology</option><option value = "LTMO">Modern Literary Studies</option><option value = "MUSC">Music</option><option value = "OAKS">Oakes College</option><option value = "OCEA">Ocean Sciences</option><option value = "PHIL">Philosophy</option><option value = "PBS">Physical & Biological Sciences</option><option value = "PHYE">Physical Education</option><option value = "PHYS">Physics</option><option value = "POLI">Politics</option><option value = "PRTR">Porter College</option><option value = "PORT">Portuguese</option><option value = "LTPR">Pre & Early Modern Literature</option><option value = "PSYC">Psychology</option><option value = "PUNJ">Punjabi</option><option value = "RUSS">Russian</option><option value = "SCIC">Science Communication</option><option value = "SOCD">Social Documentation</option><option value = "SOCS">Social Sciences</option><option value = "SOCY">Sociology</option><option value = "SPAN">Spanish</option><option value = "SPHS">Spanish for Heritage Speakers</option><option value = "SPSS">Spanish for Spanish Speakers</option><option value = "LTSP">Spanish/Latin Amer/Latino Lit</option><option value = "STEV">Stevenson College</option><option value = "TIM">Technology & Info Management</option><option value = "THEA">Theater Arts</option><option value = "UCDC">UCDC</option><option value = "WMST">Women's Studies</option><option value = "LTWL">World Lit & Cultural Studies</option><option value = "WRIT">Writing</option><option value = "YIDD">Yiddish</option>    </select>
+ </div>
+</div>
+
+
+<!-- Course Number -->
+<div class="form-group row">
+<label for="catalog_nbr" class="col-sm-2 form-control-label"><b>Course Number</b></label>
+ <div class="col-sm-10">
+ <label for="catalog_nbr_fltr" class="sr-only">Class Number Filter</label>
+ <div class="col-sm-6" style="margin-left: 0px; padding-left: 0px;">
+        <select id="catalog_nbr_fltr" name = "binds[:catalog_nbr_op]"  class="form-control form-control-sm">
+            <option value ="=">is exactly</option><option value ="contains">contains</option><option value ="<=">less than or equal to</option><option value =">=">greater than or equal to</option>        </select>
+  </div>
+  <div class="col-sm-6" style="margin-right: 0px; padding-right: 0px;">
+     <input type = "text"  placeholder="Course #" class="form-control form-control-sm" maxlength = "5" name = "binds[:catalog_nbr]" id = "catalog_nbr" value = "" />
+ </div>
+ </div>
+</div>
+
+<!-- Class Title -->
+<div class="form-group row">
+<label for="title" class="col-sm-2 form-control-label"><b>Course Title Keyword</b></label>
+ <div class="col-sm-10">
+    <input type = "text" class="form-control form-control-sm" maxlength = "50" name = "binds[:title]" id="title" value = "" />
+ </div>
+</div>
+
+<!-- Instructor -->
+<div class="form-group row">
+<label for="instructor" class="col-sm-2 form-control-label"><b>Instructor Last Name</b></label>
+ <div class="col-sm-10">
+ <div class="col-sm-6" style="margin-left: 0px; padding-left: 0px;">
+ <label for="instructor_fltr" class="sr-only">Instructer Filter</label>
+  <select id="instructor_fltr" name = "binds[:instr_name_op]" class="form-control form-control-sm">
+        <option value ="=">is exactly</option><option value ="contains">contains</option><option value ="begins">begins with</option>  </select>
+  </div>
+  <div class="col-sm-6" style="margin-right: 0px; padding-right: 0px;">
+     <input type = "text" class="form-control form-control-sm" placeholder="Last Name" maxlength = "50" name = "binds[:instructor]" id="instructor" value = ""/>
+ </div>
+ </div>
+</div>
+
+<!-- Geneds -->
+<div class="form-group row">
+<label for="ge" class="col-sm-2 form-control-label"><b>General Education</b></label>
+ <div class="col-sm-10">
+    <select name = "binds[:ge]" id="ge" placeholder="Select" class="form-control form-control-sm">
+    <option value="">&nbsp;</option>
+
+    <option value = "A">A</option><option value = "C">C</option><option value = "C1">C1</option><option value = "C2">C2</option><option value = "CC">CC</option><option value = "E">E</option><option value = "ER">ER</option><option value = "IH">IH</option><option value = "IM">IM</option><option value = "IN">IN</option><option value = "IS">IS</option><option value = "MF">MF</option><option value = "PE-E">PE-E</option><option value = "PE-H">PE-H</option><option value = "PE-T">PE-T</option><option value = "PR-C">PR-C</option><option value = "PR-E">PR-E</option><option value = "PR-S">PR-S</option><option value = "Q">Q</option><option value = "SI">SI</option><option value = "SR">SR</option><option value = "TA">TA</option><option value = "TH">TH</option><option value = "TN">TN</option><option value = "TS">TS</option><option value = "W">W</option><option value = "AnyGE">Any Requirement</option>
+    </select>
+ </div>
+</div>
+
+<!-- Course Units -->
+<div class="form-group row">
+<label for="crse_units_exact" class="col-sm-2 form-control-label"><b>Course Units</b></label>
+<label for="crse_units_op" class="sr-only">Course Units Filter</label>
+
+ <div class="col-sm-10">
+ <div class="col-sm-6" style="margin-left: 0px; padding-left: 0px;">
+        <select class="form-control form-control-sm" name = "binds[:crse_units_op]" id="crse_units_op">
+            <option value ="=">is exactly</option><option value ="between">between</option>        </select>
+  </div>
+      <div id="crse_units_between" class="col-sm-6" style="display:none; margin-right: 0px; padding-right: 0px;">
+          <input type = "text" class="form-control form-control-sm" maxlength = "2" name = "binds[:crse_units_from]" id="crse_units_from" placeholder="Units From" value = "" />
+            and <input type = "text" class="form-control form-control-sm" maxlength = "2" name = "binds[:crse_units_to]" id="crse_units_to" placeholder="Units To" value = "" />
+      </div>
+      <div id="crse_units_exact_div" class="col-sm-6"  style="margin-right: 0px; padding-right: 0px;">
+          <input type = "text" class="form-control form-control-sm" maxlength = "2" name = "binds[:crse_units_exact]" id="crse_units_exact" placeholder="Units" value = "" />
+      </div>
+      </div>
+</div>
+
+<!-- Meeting Days -->
+<div class="form-group row">
+<label for="Days" class="col-sm-2 form-control-label"><b>Meeting Days</b></label>
+ <div class="col-sm-10">
+    <select name = "binds[:days]" id = "Days" class="form-control form-control-sm">
+        <option value="">&nbsp;</option>
+        <option value="">All Days</option>
+        <option value = "MTWR">MTuWTh</option><option value = "MTWRF">MTuWThF</option><option value = "MWF">MWF</option><option value = "MW">MW</option><option value = "TWR">TuWTh</option><option value = "TR">TuTh</option><option value = "M">M</option><option value = "T">T</option><option value = "W">W</option><option value = "R">Th</option><option value = "F">F</option>    </select>
+ </div>
+</div>
+
+<!-- Meeting Times -->
+<div class="form-group row">
+<label for="Times" class="col-sm-2 form-control-label"><b>Meeting Times</b></label>
+ <div class="col-sm-10">
+    <select name = "binds[:times]" id = "Times"  class="form-control form-control-sm">
+        <option value="">&nbsp;</option>
+        <option value="">All Times</option>
+        <option value = "Morning">Morning</option><option value = "Afternoon">Afternoon</option><option value = "Evening">Evening</option><option value = "08:00AM09:05AM">0800AM - 0905AM</option><option value = "08:00AM09:35AM">0800AM - 0935AM</option><option value = "09:20AM10:25AM">0920AM - 1025AM</option><option value = "09:50AM11:25AM">0950AM - 1125AM</option><option value = "10:40AM11:45AM">1040AM - 1145AM</option><option value = "11:40AM01:15PM">1140AM - 0115PM</option><option value = "12:00PM01:05PM">1200PM - 0105PM</option><option value = "01:20PM02:25PM">0120PM - 0225PM</option><option value = "01:30PM03:05PM">0130PM - 0305PM</option><option value = "02:40PM03:45PM">0240PM - 0345PM</option><option value = "03:20PM04:55PM">0320PM - 0455PM</option><option value = "04:00PM05:05PM">0400PM - 0505PM</option><option value = "05:20PM06:55PM">0520PM - 0655PM</option><option value = "07:10PM08:45PM">0710PM - 0845PM</option><option value = "08:00PM09:45PM">0800PM - 0945PM</option>    </select>
+ </div>
+</div>
+
+<!-- Career -->
+<div class="form-group row">
+<label for="acad_career" class="col-sm-2 form-control-label"><b>Course Career</b></label>
+ <div class="col-sm-10">
+    <select name = "binds[:acad_career]" id="acad_career" class="form-control form-control-sm">
+    <option value = ""  selected="selected">&nbsp;</option>
+    <option value = "" >Any</option>
+    <option value = "UGRD">Undergraduate</option><option value = "GRAD">Graduate</option>    </select>
+ </div>
+</div>
+
+<!-- Online Only -->
+<div class="row">
+<div class="col-sm-10">
+<div class="checkbox">
+  <label>
+    <input type="checkbox" name="binds[:online_only]" id="online_only" value="1">
+    Show Online Classes Only  </label>
+</div>
+</div>
+</div>
+
+<p>
+
+
+</div>
+</form>
+</div>
+
+
+
+ 
+
+<div class="panel panel-info center-block" style="max-width: 1000px;">
+         <div class="panel-heading"><H1 style="display:inline-block;"><i class="fa fa-search fa-pull-left" aria-hidden="true"></i>
+          Search Results
+         </H1><img src="logo.png" style="float: right;" alt="UCSC Logo"><div style="clear:both;"></div>
+         </div>
+         <div class="panel-body" style="padding-top: 0px;">
+<div class="row" style="background-color: #eee;padding: 5px;">
+	<div class="hide-print" style="float:left;">
+	<b>1</b> - <b>25</b> of <b>40</b> <a href = "index.php" onclick = "document.resultsForm.action.value = 'next'; document.resultsForm.submit(); return false;">next&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>	<br><div id = "display_search" >
+	<span class="SSSKEYTEXT"><b>Term</b>: 2018 Spring Quarter&nbsp;&nbsp;|&nbsp;&nbsp;<b>Subject</b>: Computer Engineering</span>
+</div>
+</div>
+
+
+<div style="float:right;">
+	
+					<img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" aria-hidden="true" alt="Open"><span aria-hidden="true">Open</span>
+					<img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_CLOSED_ICN_1.gif" aria-hidden="true" alt="Closed"><span aria-hidden="true">Closed</span>
+					<img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_WAITLIST_ICN_1.gif" aria-hidden="true" alt="Closed with Wait List"><span aria-hidden="true">Closed with Wait List</span>
+		<br />
+
+		<form class="hide-print" action = "index.php" name = "resultsForm" id = "resultsForm" method = "post">
+	 <input type = "hidden" id = "page_action" name = "action" value = "">
+	 	 <input type="hidden" name="binds[:term]" value="2182">
+	 	 <input type="hidden" name="binds[:subject]" value="CMPE">
+	 	 <input type="hidden" name="binds[:session_code]" value="">
+	 	 <input type = "hidden" name = "rec_start" value = "0">
+
+	<div id = "segment_dropdown">
+			Display first&nbsp;
+			<select name = "rec_dur" id = "rec_dur" onchange = " document.resultsForm.action.value = 'update_segment'; document.resultsForm.submit(); return false;">
+			<option value="10" >10</option><option value="25" selected="selected">25</option><option value="50" >50</option><option value="100" >100</option>			</select>
+	</div>
+	</form>
+
+</div>
+</div>
+
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_0">
+   <form action="index.php" id="detail_form_0" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61423">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_WAITLIST_ICN_1.gif" alt="Closed with Wait List" title="Closed with Wait List"  aria-hidden="true"><span class='sr-only'>Wait List</span> <a id="class_id_61423" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0MjMiO30%3D">CMPE 3 - 01&nbsp;&nbsp;&nbsp;Personal Computers</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61423" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0MjMiO30%3D">61423</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Moulds,G.B.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: ClassroomUnit 002</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TuTh 09:50AM-11:25AM</div>
+ <div class="col-xs-6 col-sm-3"> 468 of 0 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__003__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_1">
+   <form action="index.php" id="detail_form_1" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="63324">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_63324" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjMzMjQiO30%3D">CMPE 10 - 01&nbsp;&nbsp;&nbsp;Kinematics&amp;Dynamics</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_63324" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjMzMjQiO30%3D">63324</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Milutinovic,D.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: Steven Acad 175</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> MWF 01:20PM-02:25PM</div>
+ <div class="col-xs-6 col-sm-3"> 32 of 90 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__010__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_2">
+   <form action="index.php" id="detail_form_2" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="62670">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_62670" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjI2NzAiO30%3D">CMPE 12 - 01&nbsp;&nbsp;&nbsp;Com Sys/Assmbly Lan</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_62670" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjI2NzAiO30%3D">62670</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Guthaus,M.R.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: Media Theater M110</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TuTh 11:40AM-01:15PM</div>
+ <div class="col-xs-6 col-sm-3"> 343 of 382 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__012__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_3">
+   <form action="index.php" id="detail_form_3" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61428">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_61428" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0MjgiO30%3D">CMPE 12L - 01&nbsp;&nbsp;&nbsp;Comp Sys/Lang Lab</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61428" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0MjgiO30%3D">61428</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Guthaus,M.R.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LAB: TBA</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TBA To Be Arranged</div>
+ <div class="col-xs-6 col-sm-3"> 343 of 382 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__012L__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_4">
+   <form action="index.php" id="detail_form_4" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="62951">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_62951" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjI5NTEiO30%3D">CMPE 13 - 01&nbsp;&nbsp;&nbsp;Computer Systems&amp;C</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_62951" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjI5NTEiO30%3D">62951</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Dunne,M.J.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: ClassroomUnit 001</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> MWF 09:20AM-10:25AM</div>
+ <div class="col-xs-6 col-sm-3"> 120 of 125 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__013__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_5">
+   <form action="index.php" id="detail_form_5" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="62952">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_62952" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjI5NTIiO30%3D">CMPE 13L - 01&nbsp;&nbsp;&nbsp;Comp Sys C Lab</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_62952" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjI5NTIiO30%3D">62952</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Dunne,M.J.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LAB: TBA</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TBA To Be Arranged</div>
+ <div class="col-xs-6 col-sm-3"> 120 of 125 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__013L__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_6">
+   <form action="index.php" id="detail_form_6" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61449">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_WAITLIST_ICN_1.gif" alt="Closed with Wait List" title="Closed with Wait List"  aria-hidden="true"><span class='sr-only'>Wait List</span> <a id="class_id_61449" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NDkiO30%3D">CMPE 16 - 01&nbsp;&nbsp;&nbsp;Appl Discrete Math</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61449" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NDkiO30%3D">61449</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Larrabee,T.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: ClassroomUnit 002</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TuTh 03:20PM-04:55PM</div>
+ <div class="col-xs-6 col-sm-3"> 410 of 0 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__016__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_7">
+   <form action="index.php" id="detail_form_7" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61456">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_61456" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NTYiO30%3D">CMPE 80N - 01&nbsp;&nbsp;&nbsp;Intro to Networking</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61456" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NTYiO30%3D">61456</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Parsa,C.L.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: Thim Lecture 003</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> MWF 02:40PM-03:45PM</div>
+ <div class="col-xs-6 col-sm-3"> 137 of 207 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__080N__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_8">
+   <form action="index.php" id="detail_form_8" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61461">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_CLOSED_ICN_1.gif" alt="Closed" title="Closed"  aria-hidden="true"><span class='sr-only'>Closed</span> <a id="class_id_61461" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NjEiO30%3D">CMPE 100 - 01&nbsp;&nbsp;&nbsp;Logic Design</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61461" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NjEiO30%3D">61461</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Dunne,M.J.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: J Baskin Engr 152</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> MWF 04:00PM-05:05PM</div>
+ <div class="col-xs-6 col-sm-3"> 80 of 80 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__100__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_9">
+   <form action="index.php" id="detail_form_9" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61462">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_WAITLIST_ICN_1.gif" alt="Closed with Wait List" title="Closed with Wait List"  aria-hidden="true"><span class='sr-only'>Wait List</span> <a id="class_id_61462" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NjIiO30%3D">CMPE 100L - 01&nbsp;&nbsp;&nbsp;Logic Design Lab</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61462" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NjIiO30%3D">61462</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Schlag,M.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LAB: TBA</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TBA To Be Arranged</div>
+ <div class="col-xs-6 col-sm-3"> 80 of 80 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__100L__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_10">
+   <form action="index.php" id="detail_form_10" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61467">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_61467" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NjciO30%3D">CMPE 107 - 01&nbsp;&nbsp;&nbsp;Probability/Stats</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61467" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NjciO30%3D">61467</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Garcia-Luna-Aceves,J.J.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: ClassroomUnit 002</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> MWF 01:20PM-02:25PM</div>
+ <div class="col-xs-6 col-sm-3"> 203 of 300 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__107__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_11">
+   <form action="index.php" id="detail_form_11" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61473">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_WAITLIST_ICN_1.gif" alt="Closed with Wait List" title="Closed with Wait List"  aria-hidden="true"><span class='sr-only'>Wait List</span> <a id="class_id_61473" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NzMiO30%3D">CMPE 110 - 01&nbsp;&nbsp;&nbsp;Computer Architect</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61473" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NzMiO30%3D">61473</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Litz,H.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: J Bask Aud 101</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> MWF 12:00PM-01:05PM</div>
+ <div class="col-xs-6 col-sm-3"> 202 of 200 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__110__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_12">
+   <form action="index.php" id="detail_form_12" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61478">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_WAITLIST_ICN_1.gif" alt="Closed with Wait List" title="Closed with Wait List"  aria-hidden="true"><span class='sr-only'>Wait List</span> <a id="class_id_61478" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NzgiO30%3D">CMPE 121 - 01&nbsp;&nbsp;&nbsp;Micro System Design</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61478" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NzgiO30%3D">61478</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Varma,A.M.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: Engineer 2 194</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TuTh 11:40AM-01:15PM</div>
+ <div class="col-xs-6 col-sm-3"> 59 of 0 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__121__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_13">
+   <form action="index.php" id="detail_form_13" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61479">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_WAITLIST_ICN_1.gif" alt="Closed with Wait List" title="Closed with Wait List"  aria-hidden="true"><span class='sr-only'>Wait List</span> <a id="class_id_61479" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NzkiO30%3D">CMPE 121L - 01&nbsp;&nbsp;&nbsp;Micro Sys Desgn Lab</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61479" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0NzkiO30%3D">61479</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Varma,A.M.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LAB: TBA</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TBA To Be Arranged</div>
+ <div class="col-xs-6 col-sm-3"> 59 of 0 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__121L__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_14">
+   <form action="index.php" id="detail_form_14" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61484">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_61484" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0ODQiO30%3D">CMPE 123B - 01&nbsp;&nbsp;&nbsp;Engr Design Proj II</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61484" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0ODQiO30%3D">61484</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Varma,A.M.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LAB: TBA</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TBA To Be Arranged</div>
+ <div class="col-xs-6 col-sm-3"> 49 of 90 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__123B__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_15">
+   <form action="index.php" id="detail_form_15" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61491">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_61491" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0OTEiO30%3D">CMPE 125 - 01&nbsp;&nbsp;&nbsp;Log Desgn W/Verilog</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61491" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0OTEiO30%3D">61491</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Renau Ardevol,J.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: Engineer 2 192</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TuTh 09:50AM-11:25AM</div>
+ <div class="col-xs-6 col-sm-3"> 42 of 50 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__125__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_16">
+   <form action="index.php" id="detail_form_16" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61492">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_61492" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0OTIiO30%3D">CMPE 125L - 01&nbsp;&nbsp;&nbsp;Verilog Laboratory</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61492" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0OTIiO30%3D">61492</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Renau Ardevol,J.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LAB: TBA</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TBA To Be Arranged</div>
+ <div class="col-xs-6 col-sm-3"> 43 of 50 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__125L__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_17">
+   <form action="index.php" id="detail_form_17" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="63664">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_63664" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjM2NjQiO30%3D">CMPE 129C - 01&nbsp;&nbsp;&nbsp;Capstone Project III</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_63664" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjM2NjQiO30%3D">63664</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Munday,D.A.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LAB: TBA</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TBA To Be Arranged</div>
+ <div class="col-xs-6 col-sm-3"> 14 of 25 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__129C__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_18">
+   <form action="index.php" id="detail_form_18" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="63072">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_63072" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjMwNzIiO30%3D">CMPE 145 - 01&nbsp;&nbsp;&nbsp;Estim Stochastic Proc</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_63072" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjMwNzIiO30%3D">63072</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Milutinovic,D.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: Thimann Lab 101</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> MWF 10:40AM-11:45AM</div>
+ <div class="col-xs-6 col-sm-3"> 0 of 20 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__145__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_19">
+   <form action="index.php" id="detail_form_19" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61495">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_61495" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0OTUiO30%3D">CMPE 151 - 01&nbsp;&nbsp;&nbsp;Adv Computer Net</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61495" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE0OTUiO30%3D">61495</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Graziani,R.M.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: Engineer 2 506</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TuTh 09:50AM-11:25AM</div>
+ <div class="col-xs-6 col-sm-3"> 28 of 30 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__151__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_20">
+   <form action="index.php" id="detail_form_20" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="63039">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_63039" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjMwMzkiO30%3D">CMPE 151L - 01&nbsp;&nbsp;&nbsp;Adv Computer Net Lab</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_63039" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjMwMzkiO30%3D">63039</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Graziani,R.M.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LAB: TBA</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TBA To Be Arranged</div>
+ <div class="col-xs-6 col-sm-3"> 28 of 30 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__151L__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_21">
+   <form action="index.php" id="detail_form_21" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61795">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_CLOSED_ICN_1.gif" alt="Closed" title="Closed"  aria-hidden="true"><span class='sr-only'>Closed</span> <a id="class_id_61795" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE3OTUiO30%3D">CMPE 153 - 01&nbsp;&nbsp;&nbsp;Digital Signal Proc</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61795" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE3OTUiO30%3D">61795</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Dowla,F.U.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: Engineer 2 192</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> MW 05:20PM-06:55PM</div>
+ <div class="col-xs-6 col-sm-3"> 53 of 50 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__153__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_22">
+   <form action="index.php" id="detail_form_22" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="63140">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_OPEN_ICN_1.gif" alt="Open" title="Open"  aria-hidden="true"><span class='sr-only'>Open</span> <a id="class_id_63140" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjMxNDAiO30%3D">CMPE 161 - 01&nbsp;&nbsp;&nbsp;Mobile S.I.</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_63140" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjMxNDAiO30%3D">63140</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Manduchi,R.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: Engineer 2 506</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TuTh 01:30PM-03:05PM</div>
+ <div class="col-xs-6 col-sm-3"> 23 of 30 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__161__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_23">
+   <form action="index.php" id="detail_form_23" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="61501">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_WAITLIST_ICN_1.gif" alt="Closed with Wait List" title="Closed with Wait List"  aria-hidden="true"><span class='sr-only'>Wait List</span> <a id="class_id_61501" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE1MDEiO30%3D">CMPE 185 - 01&nbsp;&nbsp;&nbsp;Tech Writ Comp Engs</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_61501" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjE1MDEiO30%3D">61501</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Moulds,G.B.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: Engineer 2 194</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TuTh 01:30PM-03:05PM</div>
+ <div class="col-xs-6 col-sm-3"> 50 of 0 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__185__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+<div class="panel panel-default row" style="margin-top: 0px; margin-bottom: 0px;" id="rowpanel_24">
+   <form action="index.php" id="detail_form_24" method="post">
+        <input type="hidden" name="action" value="detail">
+        <input type="hidden" name="class_data[:STRM]" value="2182">
+        <input type="hidden" name="class_data[:CLASS_NBR]" value="62975">
+                <input type="hidden" name="binds[:term]" value="2182">
+                <input type="hidden" name="binds[:subject]" value="CMPE">
+                <input type="hidden" name="binds[:session_code]" value="">
+                <input type="hidden" name="rec_start" value="0">
+        <input type="hidden" name="rec_dur" value="25">
+   </form>
+   <div class="panel-heading panel-heading-custom"><H2 style="margin:0px;"><img src="https://pisa.ucsc.edu/cs9/prd/images/PS_CS_STATUS_WAITLIST_ICN_1.gif" alt="Closed with Wait List" title="Closed with Wait List"  aria-hidden="true"><span class='sr-only'>Wait List</span> <a id="class_id_62975" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjI5NzUiO30%3D">CMPE 215 - 01&nbsp;&nbsp;&nbsp;Model Robot Manip</a> </H2></div>
+   <div class="panel-body" style="padding-top: 0px;">
+<div class="row ">
+ <div class="col-xs-6 col-sm-3">Class Number: <a id="class_nbr_62975" href = "index.php?action=detail&amp;class_data=YToyOntzOjU6IjpTVFJNIjtzOjQ6IjIxODIiO3M6MTA6IjpDTEFTU19OQlIiO3M6NToiNjI5NzUiO30%3D">62975</a> </div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-user" aria-hidden="true"></i><i class="sr-only">Instructor:</i> Wehner,M.</div>
+ <div class="col-xs-6 col-sm-3"><i class="fa fa-location-arrow" aria-hidden="true"></i><i class="sr-only">Location:</i> LEC: J Baskin Engr 372</div>
+  <div class="col-xs-6 col-sm-3"><i class="fa fa-clock-o" aria-hidden="true"></i><i class="sr-only">Day and Time:</i> TuTh 09:50AM-11:25AM</div>
+ <div class="col-xs-6 col-sm-3"> 32 of 30 Enrolled</div>
+  <div class="col-xs-6 col-sm-3 hide-print"><a href="http://ucsc.verbacompare.com/comparison?id=SP18__CMPE__215__01" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Materials</a></div>
+ </div>
+ </div>
+</div>
+
+
+
+
+
+
+<div class="row hide-print" style="padding-left:5px;background-color: #eee;">
+<b>1</b> to <b>25</b> of <b>40</b> <a href = "index.php" onclick = "document.resultsForm.action.value = 'next'; document.resultsForm.submit(); return false;">next&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
+<div class="hide-print">
+<a href= "index.php"><i class="fa fa-search" aria-hidden="true"></i> Begin new search</a> <br />
+<a href= "" id = "search_link" onClick="return false;"><i class="fa fa-search-plus" aria-hidden="true"></i> Refine this search</a>
+</div>
+
+</div> 
+</div> 
+</div> </div>
+
+
+</div><script>document.domain='ucsc.edu';</script>
+</body>
+</html>
